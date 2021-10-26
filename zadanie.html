@@ -9,24 +9,25 @@
 <body>
     <form action="">
         <input type="text" name="pole">
-        <button type="sumbit">pokaz</button>        
+        <button type="submit">Pokaż</button>
     </form>
+
     <div class="wynik"></div>
-    <script>
-        //odwołujemy sie do formularza
-        const formularz = document.querySelector('form');
-        //pobieramy div omklasie wynik
-        const wynik = document.querySelector('.wynik');
-       
-       formularz.addEventListener('sumbit',(e)=> {
-           //zatrzymujemy domyslne działąnie przeglądarki  na formularzu
-           e.preventDefault();
-           //odwołujemy sie do pola w formularzu
-           const poleformularzu = document.querySelector('input[name="pole"] ').value;
-           //wstrzymuje prace przeglądarki
-           wynik.textContent = poleformularzu;
-           console.log
-        });
-    </script>
+        <script>
+            // odwołujemy sie do formularza
+            const formularz = document.querySelector('form');
+            //pobieramy div o klasie wynik
+            const wynik = document.querySelector('.wynik');
+            //do zdarzenia submit i formularza przypisujemy funkcje ktora przeglądarka uruchomi w momencie pojawienia sie
+            formularz.addEventListener('submit', (e) => {
+                //zatrzymujemy domyślne działanie przeglądarki na formularzu
+                e.preventDefault();
+                //odwołujemy sie do pola w formularzu
+                const pole_w_formularzu = document.querySelector('input[name = "pole"]').value;
+                //wyświetlamy w divie wartość pola
+                wynik.textContent=pole_w_formularzu;
+            });
+        </script>
+    
 </body>
 </html>
