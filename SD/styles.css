@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.akp{
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-transform: uppercase;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vh;
+    text-decoration: underline;
+    
+    
+}

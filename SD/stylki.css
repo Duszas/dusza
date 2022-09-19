@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    padding: 20px;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(94, 245, 245);
+    color: rgb(39, 38, 38);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    transition: 0.5s;
+
+}
+ul li a:hover{
+    color: red;
+
+}
