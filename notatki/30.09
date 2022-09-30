@@ -1,0 +1,16 @@
+Obsługa daty i czasu:
+<?php
+$data = new DateTime();
+echo $data -> Format;
+?>
+
+Odejmowanie daty:
+
+<?php
+$teraz = new DateTime(date());
+$koniec = new DateTime('2022-09-30');
+$roznica = $teraz ->diff($koniec);
+echo $roznica -> format('%m miesiecy %d dni');
+echo '<br>';
+echo $roznica -> format ('%a dni');
+?>
